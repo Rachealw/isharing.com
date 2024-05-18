@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isharing-Contact</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+  body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  
+  .rounded-button {
+    border-radius: 20px; 
+    padding: 10px 20px; 
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    position: right;
+   }
+
+   .thumbnails {
+    display: flex;
+    overflow-x: auto;
+  }
+
+   .container {
+    text-align: center;
+    padding: 50px;
+  }
+
+ </style> 
+</head>
+<body>
+    <div class="thumbnails">
+            
+        <div>
+             <img src="image/Website Logo.png" alt="ART logo" class="logo">
+        </div>
+
+         <nav  style="margin-left: 70%;">
+            <ul>
+                <a href="About.html"><button class="rounded-button" >ABOUT</button></a>
+                <a href="index.html"><button class="rounded-button" >HOME</button></a>
+                <button class="rounded-button" >CONTACT</button>
+            </ul>
+        </nav>
+    </div>   
+
+<header>
+ <h1 style="margin-left: 44%;">Contact Us</h1>
+</header>
+
+<main>
+    <div id="social-media" >
+        <div style="margin-left: 46%;">
+            <img src='image/ig.jpg' alt='Instagram Icon'>
+            <span>i-Sharing</span>
+        </div>
+        <div style="margin-left: 46%;">
+            <img src='image/be.jpg' alt='Behance Icon'>
+            <span>i-Sharing</span>
+        </div>
+    </div>
+
+    <section id="contact-form">
+        <h2>Leave Your Message</h2>
+        <form action="/submit-form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Send">
+        </form>
+    </section>
+</main>
+<br>
+
+<footer>
+    <p>Thank you for visiting i-sharing. Let us rush to the pinnacle of art and create the beauty of art together.</p>
+</footer>
+
+</body>
+</html>
